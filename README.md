@@ -1,4 +1,4 @@
-# vue-custom-router
+# Vue Custom Router
 
 > A customized Vue router for handling nonstandard routing use cases
 
