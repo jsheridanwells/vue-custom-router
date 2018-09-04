@@ -12,22 +12,15 @@
           Vai pros artigos
         </button>
       </div>
-      <app-router></app-router>
+      <router></router>
     </div>
 </template>
 
 <script>
-import AppRouter from './Router';
-import { push } from './history';
-import { listen } from './history';
-
 export default {
-  components: {
-    AppRouter
-  },
   methods: {
     go(route) {
-      push(route);
+      this.$pushRoute(route);
     }
   }
 }

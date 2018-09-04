@@ -4,14 +4,7 @@
 
 
 <script>
-import HomePage from './components/Home';
-import ArticlesPage from './components/Articles';
 import { listen } from './history';
-
-const routes = {
-    '/': HomePage,
-    '/articles': ArticlesPage
-}
 
 export default {
     data(){
@@ -19,7 +12,7 @@ export default {
     },
     computed: {
         routedComponent() {
-            return routes[this.current];
+            return this.$routes[this.current];
         }
     },
     created() {
