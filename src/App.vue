@@ -18,14 +18,16 @@
 
 <script>
 import AppRouter from './Router';
+import { push } from './history';
+import { listen } from './history';
 
 export default {
   components: {
     AppRouter
   },
   methods: {
-    go: function(route) {
-      window.location = route;
+    go(route) {
+      push(route);
     }
   }
 }
